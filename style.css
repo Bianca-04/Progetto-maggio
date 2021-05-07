@@ -1,3 +1,6 @@
+/* Base Style */
+
+a{text-decoration: none;}
 
 /* Header*/
 
@@ -30,6 +33,8 @@ header{
     .cta{display: none;}
     .menu{position: absolute; top: 0; right: -100%; background-color: black; height: 100vh; padding-top: 80px;}
     .menu li{display: block;}
+
+    .menu--open{right: 0%}
 
     .hamburger{
         display: block;

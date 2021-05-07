@@ -11,8 +11,8 @@ header{
     display: flex;
     max-width: 1350px;
     background-color: black;
-    border: 2px solid red;
 }
+
 .menu{
     width: 100%;
 }
@@ -20,8 +20,11 @@ header{
 .menu li{display: inline-block;}
 .menu li a{color: white; padding: 15px;display: block;}
 
-.hamburger{display: none;}
+.hamburger{display: none; margin-right: 20px;}
 
+.logo img{
+    width: 100px;
+}
 
 @media (max-width: 768px){
     .cta{display: none;}

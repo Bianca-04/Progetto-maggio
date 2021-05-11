@@ -21,10 +21,12 @@
             <img src="logonero.png">
         </div>
         <ul class="menu">
-            <li><a href="">Home</a></li>
+            <li><a href="">Il gioco</a></li>
             <li><a href="">Single</a></li>
             <li><a href="">Contact</a></li>
         </ul>
+        <div class="line-menu"></div>
+
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -41,6 +43,45 @@
     <br>
     <br>
     <br>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+    $( document ).ready(function(){
+
+        /* Open panel */
+        $(".hamburger").on('click', function(){
+            $(".menu").toggleClass("menu--open");
+        })
+    })
+    </script>
+
+    <script type="text/javascript">
+        $( document ).ready(function() {
+
+            /* variabili */
+
+            var nav = $(".menu");
+            var pos = 0;
+            var wid = "";
+            var line = $(".line-menu")
+
+            /* click */
+            nav.find("ul li").on('click', function(){
+
+                var this_nav = $(this);
+
+                /* animate */
+
+                line.animate({
+                    left: this_nav.position().left,
+                    width: this_nav.width() + 40
+                })
+            });
+        })
+    
+    </script>
 </body>
 
 </html>

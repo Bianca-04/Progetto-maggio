@@ -1,3 +1,6 @@
+/* Base Style */
+
+a{text-decoration: none;}
 
 /* Header*/
 
@@ -18,18 +21,23 @@ header{
 }
 
 .menu li{display: inline-block;}
-.menu li a{color: white; padding: 15px;display: block;}
+.menu li a{color: white; font-size: 20px; padding: 15px;display: block;margin-left: 30px;}
+
+.line-menu{position: absolute; bottom: 0; left: 30px; height: 5px; width: 60px; background-color: white;}
 
 .hamburger{display: none; margin-right: 20px;}
 
 .logo img{
     width: 100px;
+    margin-left: 10px;
 }
 
 @media (max-width: 768px){
     .cta{display: none;}
     .menu{position: absolute; top: 0; right: -100%; background-color: black; height: 100vh; padding-top: 80px;}
     .menu li{display: block;}
+
+    .menu--open{right: 0%}
 
     .hamburger{
         display: block;

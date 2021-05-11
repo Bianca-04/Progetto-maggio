@@ -20,10 +20,10 @@ header{
     width: 100%;
 }
 
-.menu li{display: inline-block;}
-.menu li a{color: white; font-size: 20px; padding: 15px;display: block;margin-left: 30px;}
+.menu ul li{display: inline-block;}
+.menu li{color: white; font-size: 20px; padding: 15px; display: block; margin-left: 30px;}
 
-.line-menu{position: absolute; bottom: 0; left: 30px; height: 5px; width: 60px; background-color: white;}
+.line-menu{position: absolute; bottom: 0px; left: 0px; height: 5px; width: 60px; background-color: white;}
 
 .hamburger{display: none; margin-right: 20px;}
 

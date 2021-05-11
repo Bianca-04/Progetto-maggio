@@ -20,12 +20,15 @@
         <div class="logo">
             <img src="logonero.png">
         </div>
-        <ul class="menu">
-            <li><a href="">Il gioco</a></li>
-            <li><a href="">Single</a></li>
-            <li><a href="">Contact</a></li>
+        
+        <div class="menu">
+        <ul>
+            <li>Il gioco</li>
+            <li>Single</li>
+            <li>Contact</li>
         </ul>
         <div class="line-menu"></div>
+        </div>
 
         <div class="hamburger">
             <span></span>
@@ -45,7 +48,7 @@
     <br>
 
     <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
     <script>
     $( document ).ready(function(){
@@ -67,17 +70,22 @@
             var wid = "";
             var line = $(".line-menu")
 
-            /* click */
-            nav.find("ul li").on('click', function(){
-
+            /* mouseover */
+            nav.find("ul li").on('mouseover', function(){
+                
                 var this_nav = $(this);
+                line.show();
 
                 /* animate */
 
                 line.animate({
-                    left: this_nav.position().left,
-                    width: this_nav.width() + 40
+                    left: this_nav.position().left + 30,
+                    width: this_nav.width() + 30
                 })
+            });
+
+            nav.find("ul li").on('mouseout', function(){
+                line.hide();         
             });
         })
     

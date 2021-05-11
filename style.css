@@ -33,9 +33,9 @@ header{
 }
 
 @media (max-width: 768px){
-    .cta{display: none;}
     .menu{position: absolute; top: 0; right: -100%; background-color: black; height: 100vh; padding-top: 80px;}
     .menu li{display: block;}
+    .line-menu{display: none;}
 
     .menu--open{right: 0%}
 

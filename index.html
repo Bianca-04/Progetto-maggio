@@ -23,12 +23,20 @@
         </div>
         
         <div class="menu">
-        <ul>
-            <li>Il gioco</li>
-            <li>Single</li>
-            <li>Contact</li>
-        </ul>
-        <div class="line-menu"></div>
+            <div class="menusx">
+            <ul>
+                <li>Il gioco</li>
+                <li>Noi</li>
+                <li>Star Rider</li>
+            </ul>
+            <div class="line-menu"></div>
+            </div>
+            <div class="menudx">
+                <ul>
+                    <li>GIOCA ORA</li>
+                    <li>Lingua</li>
+                </ul>
+            </div>
         </div>
 
         <div class="hamburger">
@@ -54,7 +62,7 @@
         <div class="carousel-cell"><div class="container-foto"><img src="foto-home3copia2.jpg"></div></div>
         <div class="carousel-cell"><div class="container-foto"><img src="foto-home4copia2.jpg"></div></div>
         <div class="carousel-cell"><div class="container-foto"><img src="foto-home5copia2.jpg"></div></div>
-      </div>
+    </div>
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -76,12 +84,18 @@
 
             /* variabili */
 
-            var nav = $(".menu");
+            var nav = $(".menusx");
             var pos = 0;
             var wid = "";
             var line = $(".line-menu")
 
+            line.hide(); /*me la cancella ma non subito, ci mette un millesimo di secondo*/
+
             /* mouseover */
+            nav.find("ul li").on('mouseout', function(){
+                line.hide();         
+            }); 
+
             nav.find("ul li").on('mouseover', function(){
                 
                 var this_nav = $(this);
@@ -95,12 +109,12 @@
                 })
             });
 
-            nav.find("ul li").on('mouseout', function(){
-                line.hide();         
-            });
+            
         })
     
     </script>
+
+    
 </body>
 
 </html>

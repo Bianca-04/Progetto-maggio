@@ -1,5 +1,8 @@
 /* Base Style */
 
+* {
+    box-sizing: border-box;
+}
 a{text-decoration: none;}
 
 /* Header*/
@@ -10,9 +13,11 @@ header{
     top:0;
     left:50%;
     transform: translateX(-50%);
-    padding: 15px;
+    padding: 8px;
     display: flex;
     background-color: black;
+    z-index: 10;
+    height: 75px;
 }
 
 .menu{
@@ -47,12 +52,12 @@ header{
 }
 
 @media (max-width: 900px){
-    .menu{position: fixed; width: 175px; top: 0; right: -100%; background-color: black; height: 275px; padding-top: 80px;}
-    .menusx{display: block; text-align: center; width: 80%; padding: 10px; padding-bottom: 0px;}
-    .menudx{display: block; text-align: center; width: 80%; padding: 10px; padding-top: 0px;}
+    .menu{position: fixed; width: 175px; top: 0; right: -100%; background-color: black; height: 360px; padding-top: 80px;}
+    .menusx{display: block; text-align: center; width: 100%; padding: 10px; padding-bottom: 0px;}
+    .menudx{display: block; text-align: center; width: 100%; padding: 10px; padding-top: 0px;}
     .menusx li{margin: 0px}
     .menudx li{margin: 0px}
-    .line-menu{display: none; background-color: black;}    /*la lineetta ce ma non si vede, chiedere al prof come toglierla*/
+    .line-menu{display: none;}    /*la lineetta ce ma non si vede, chiedere al prof come toglierla*/
 
     .hamburger{
         display: block;
@@ -70,7 +75,15 @@ header{
 
 /* Carousel */
 
-.container-foto img{width: 100%; height: 900px;}
+.container-foto img{min-height: 100%; min-width: 100%;}
 .main-carousel{}
-.carousel-cell{width: 100%; margin-top: 0px; height: 500px; border:blue;}
+.carousel-cell{width: 100%; margin-top: 0px; height: 500px; overflow: hidden;}
 
+.primo{
+    margin-top: 75px;
+}
+
+/* link interni */
+.containerl{width: 100%;}
+.containerlsx{float:left; width: 50%; border: red solid;}
+.containerldx{float:right; width: 50%; border:blue solid;}

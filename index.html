@@ -11,7 +11,9 @@
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
+        integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
+        crossorigin="anonymous" />
 
 
 </head>
@@ -21,15 +23,15 @@
         <div class="logo">
             <img src="logonero.png">
         </div>
-        
+
         <div class="menu">
             <div class="menusx">
-            <ul>
-                <li>Il gioco</li>
-                <li>Noi</li>
-                <li>Star Rider</li>
-            </ul>
-            <div class="line-menu"></div>
+                <ul>
+                    <li>Il gioco</li>
+                    <li>Noi</li>
+                    <li>Star Rider</li>
+                </ul>
+                <div class="line-menu"></div>
             </div>
             <div class="menudx">
                 <ul>
@@ -45,42 +47,62 @@
             <span></span>
         </div>
     </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
-    <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell"><div class="container-foto"><img src="foto-home1copia2.jpg"></div></div>
-        <div class="carousel-cell"><div class="container-foto"><img src="foto-home2copia.jpg"></div></div>
-        <div class="carousel-cell"><div class="container-foto"><img src="foto-home3copia2.jpg"></div></div>
-        <div class="carousel-cell"><div class="container-foto"><img src="foto-home4copia2.jpg"></div></div>
-        <div class="carousel-cell"><div class="container-foto"><img src="foto-home5copia2.jpg"></div></div>
+    <div class="main-carousel primo" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000}'>
+        <div class="carousel-cell">
+            <div class="container-foto"><img src="foto-home1copia2.jpg"></div>
+        </div>
+        <div class="carousel-cell">
+            <div class="container-foto"><img src="foto-home2copia.jpg"></div>
+        </div>
+        <div class="carousel-cell">
+            <div class="container-foto"><img src="foto-home3copia2.jpg"></div>
+        </div>
+        <div class="carousel-cell">
+            <div class="container-foto"><img src="foto-home4copia2.jpg"></div>
+        </div>
+        <div class="carousel-cell">
+            <div class="container-foto"><img src="foto-home5copia2.jpg"></div>
+        </div>
     </div>
 
+    <div class="containerl">
+        <div class="containerlsx">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias commodi obcaecati facere sapiente voluptate voluptatem nam, nemo voluptatibus. Necessitatibus nisi nostrum quos obcaecati iure esse ipsam rerum, expedita earum?</p>
+        </div>
+        <div class="containerldx">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorum tempore mollitia totam voluptatem recusandae quibusdam sed quaerat ex doloremque in error, voluptas quam consequuntur placeat aliquid facere rem perspiciatis.</p>
+        </div>  
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"
+        integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA=="
+        crossorigin="anonymous"></script>
 
     <script>
-    $( document ).ready(function(){
+        $(document).ready(function () {
 
-        /* Open panel */
-        $(".hamburger").on('click', function(){
-            $(".menu").toggleClass("menu--open");
+            /* Open panel */
+            $(".hamburger").on('click', function () {
+                $(".menu").toggleClass("menu--open");
+            })
         })
-    })
     </script>
 
     <script type="text/javascript">
-        $( document ).ready(function() {
+        $(document).ready(function () {
 
             /* variabili */
 
@@ -88,33 +110,43 @@
             var pos = 0;
             var wid = "";
             var line = $(".line-menu")
+            var x = window.matchMedia("(min-width: 899px)")
+
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction)
 
             line.hide(); /*me la cancella ma non subito, ci mette un millesimo di secondo*/
 
-            /* mouseover */
-            nav.find("ul li").on('mouseout', function(){
-                line.hide();         
-            }); 
+            function myFunction(x){ //non va!!
+                if (x.matches) { 
+                    /* mouseover */
+                    nav.find("ul li").on('mouseout', function () {
+                        line.hide();
+                    });
 
-            nav.find("ul li").on('mouseover', function(){
-                
-                var this_nav = $(this);
-                line.show();
+                    nav.find("ul li").on('mouseover', function () {
 
-                /* animate */
+                        var this_nav = $(this);
+                        line.show();
 
-                line.animate({
-                    left: this_nav.position().left + 30,
-                    width: this_nav.width() + 30
-                })
-            });
+                        /* animate */
 
-            
+                        line.animate({
+                            left: this_nav.position().left + 30,
+                            width: this_nav.width() + 30
+                        })
+                    });
+                } else {
+                    line.hide();
+                }
+            }
         })
-    
+
     </script>
 
-    
+
+
+
 </body>
 
 </html>

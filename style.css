@@ -85,5 +85,51 @@ header{
 
 /* link interni */
 .containerl{width: 100%;}
-.containerlsx{float:left; width: 50%; border: red solid;}
-.containerldx{float:right; width: 50%; border:blue solid;}
+.containerl p{text-align: center; line-height: 350px; font-size: 30px;}
+.containerl img{width: 100px;}
+.containerlsx{float:left; width: 50%; height: 350px; margin-bottom: 20px;}
+.containerldx{float:right; width: 50%; height: 350px; margin-bottom: 20px;}
+
+.containerl1{width: 100%;}
+.containerl1 p{text-align: center; line-height: 350px;  font-size: 30px;}
+.containerlsx1{float:left; width: 50%; height: 350px;}
+.containerldx1{float:right; width: 50%; height: 350px;}
+
+/* immagini link interni */
+.frame-cavalli{
+    width: 600px;
+    margin: auto;
+    background-image: url("cavalli-link.jpg");
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 70px;
+}
+
+.frame-mondo{
+    width: 600px;
+    margin: auto;
+    background-image: url("mappadaagliare.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 70px;
+}
+
+.frame-amici{
+    width: 600px;
+    margin: auto;
+    background-image: url("amici-link.jpg"); /*dobbiamo trovarne un altra*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 70px;
+}
+
+.frame-meg{
+    width: 600px;
+    margin: auto;
+    background-image: url("missioni-link.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 70px;
+}
+

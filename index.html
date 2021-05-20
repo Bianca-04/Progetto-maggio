@@ -48,7 +48,9 @@
         </div>
     </header>
 
-    <div class="main-carousel primo" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000}'>
+    <!-- dobbiamo metterle che torna all inizio dopo che le ha fatte scorrere -->
+    <div class="main-carousel primo"
+        data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000}'>
         <div class="carousel-cell">
             <div class="container-foto"><img src="foto-home1copia2.jpg"></div>
         </div>
@@ -66,24 +68,42 @@
         </div>
     </div>
 
+    <br><br>
     <div class="containerl">
         <div class="containerlsx">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi molestias commodi obcaecati facere sapiente voluptate voluptatem nam, nemo voluptatibus. Necessitatibus nisi nostrum quos obcaecati iure esse ipsam rerum, expedita earum?</p>
+            <div class="frame-cavalli">
+                <p>CAVALLI</p>
+            </div>
         </div>
         <div class="containerldx">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolorum tempore mollitia totam voluptatem recusandae quibusdam sed quaerat ex doloremque in error, voluptas quam consequuntur placeat aliquid facere rem perspiciatis.</p>
-        </div>  
+            <div class="frame-mondo">
+                <P>MONDO</P>
+            </div>
+        </div>
     </div>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <div class="containerl1">
+        <div class="containerlsx1">
+            <div class="frame-amici">
+                <P>AMICI</P>
+            </div>
+        </div>
+        <div class="containerldx1">
+            <div class="frame-meg">
+                <p>MISSIONI E GARE</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
@@ -117,8 +137,8 @@
 
             line.hide(); /*me la cancella ma non subito, ci mette un millesimo di secondo*/
 
-            function myFunction(x){ //non va!!
-                if (x.matches) { 
+            function myFunction(x) { //non va!!
+                if (x.matches) {
                     /* mouseover */
                     nav.find("ul li").on('mouseout', function () {
                         line.hide();

@@ -75,7 +75,7 @@ header{
 
 /* Carousel */
 
-.container-foto img{min-height: 100%; min-width: 100%;}
+.container-foto img{min-height: 500px; min-width: 100%;}
 .main-carousel{}
 .carousel-cell{width: 100%; margin-top: 0px; height: 500px; overflow: hidden;}
 
@@ -85,18 +85,38 @@ header{
 
 /* link interni */
 .containerl{width: 100%;}
-.containerl p{text-align: center; line-height: 350px; font-size: 30px;}
-.containerl img{width: 100px;}
-.containerlsx{float:left; width: 50%; height: 350px; margin-bottom: 20px;}
-.containerldx{float:right; width: 50%; height: 350px; margin-bottom: 20px;}
+.containerlsx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
+.containerldx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 
 .containerl1{width: 100%;}
-.containerl1 p{text-align: center; line-height: 350px;  font-size: 30px;}
-.containerlsx1{float:left; width: 50%; height: 350px;}
-.containerldx1{float:right; width: 50%; height: 350px;}
+.containerlsx1{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
+.containerldx1{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 
 /* immagini link interni */
-.frame-cavalli{
+    .immagine {
+        padding: 10px;
+        position: relative;
+        height: 100%;
+    }
+
+    .immagine img{
+        width: 100%;
+        height: 100%;
+        border-radius: 70px;
+        display: flex;
+    }
+
+    h4 {
+        position: absolute;
+        color: #eee;
+        font: bold 30px Georgia;
+        text-align: center;
+        top: 152px;
+        width: 97%;
+    }
+
+
+/*.frame-cavalli{
     width: 600px;
     margin: auto;
     background-image: url("cavalli-link.jpg");
@@ -118,7 +138,7 @@ header{
 .frame-amici{
     width: 600px;
     margin: auto;
-    background-image: url("amici-link.jpg"); /*dobbiamo trovarne un altra*/
+    background-image: url("amici-link.jpg"); dobbiamo trovarne un altra
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 70px;
@@ -131,5 +151,5 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 70px;
-}
+} */
 

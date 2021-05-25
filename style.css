@@ -74,7 +74,6 @@ header{
 }
 
 /* Carousel */
-
 .container-foto img{min-height: 500px; min-width: 100%;}
 .main-carousel{}
 .carousel-cell{width: 100%; margin-top: 0px; height: 500px; overflow: hidden;}
@@ -83,7 +82,8 @@ header{
     margin-top: 75px;
 }
 
-/* link interni */
+
+/* Il gioco */
 .containerl{width: 100%;}
 .containerlsx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 .containerldx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
@@ -92,7 +92,7 @@ header{
 .containerlsx1{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 .containerldx1{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 
-/* immagini link interni */
+/* Il gioco - immagini */
     .immagine {
         padding: 10px;
         position: relative;
@@ -104,52 +104,39 @@ header{
         height: 100%;
         border-radius: 70px;
         display: flex;
+        -webkit-filter: brightness(100%);
     }
 
-    h4 {
+    p{
         position: absolute;
-        color: #eee;
-        font: bold 30px Georgia;
+        color: white;
+        opacity: 0;
+        font: bold 40px Georgia;
         text-align: center;
-        top: 152px;
-        width: 97%;
+        top: 157px;
+        width: 100%;
+        margin: -10px;
     }
 
+    .immagine:hover img{
+        -webkit-filter: brightness(40%);
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        transition: all 1s ease;
+    }
 
-/*.frame-cavalli{
-    width: 600px;
-    margin: auto;
-    background-image: url("cavalli-link.jpg");
+    .immagine:hover p{
+        opacity: 1;
+    }
+
+    @media (max-width: 900px){
+        .containerlsx{width: 100%;}
+        .containerldx{width: 100%;}
+        .containerlsx1{width: 100%;}
+        .containerldx1{width: 100%;}
+    }
+
     
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 70px;
-}
-
-.frame-mondo{
-    width: 600px;
-    margin: auto;
-    background-image: url("mappadaagliare.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 70px;
-}
-
-.frame-amici{
-    width: 600px;
-    margin: auto;
-    background-image: url("amici-link.jpg"); dobbiamo trovarne un altra
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 70px;
-}
-
-.frame-meg{
-    width: 600px;
-    margin: auto;
-    background-image: url("missioni-link.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 70px;
-} */
 

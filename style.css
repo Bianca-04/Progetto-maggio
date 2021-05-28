@@ -57,7 +57,7 @@ header{
     .menudx{display: block; text-align: center; width: 100%; padding: 10px; padding-top: 0px;}
     .menusx li{margin: 0px}
     .menudx li{margin: 0px}
-    .line-menu{display: none;}    /*la lineetta ce ma non si vede, chiedere al prof come toglierla*/
+    .line-menu{opacity: 0}
 
     .hamburger{
         display: block;
@@ -107,7 +107,7 @@ header{
         -webkit-filter: brightness(100%);
     }
 
-    p{
+    h4{
         position: absolute;
         color: white;
         opacity: 0;
@@ -127,7 +127,7 @@ header{
         transition: all 1s ease;
     }
 
-    .immagine:hover p{
+    .immagine:hover h4{
         opacity: 1;
     }
 
@@ -138,5 +138,5 @@ header{
         .containerldx1{width: 100%;}
     }
 
-    
+
 

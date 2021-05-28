@@ -16,6 +16,7 @@
         crossorigin="anonymous" />
 </head>
 
+<!-- menù -->
 <body>
     <header>
         <div class="logo">
@@ -25,9 +26,15 @@
         <div class="menu">
             <div class="menusx">
                 <ul>
-                    <li>Il gioco</li>
-                    <li>Noi</li>
-                    <li>Star Rider</li>
+                    <a href="#gioco">
+                        <li>Il gioco</li>
+                    </a>
+                    <a href="#noi">
+                        <li>Noi</li>
+                    </a>
+                    <a href="#star rider">
+                        <li>Star Rider</li>
+                    </a>
                 </ul>
                 <div class="line-menu"></div>
             </div>
@@ -46,9 +53,9 @@
         </div>
     </header>
 
-    <!-- dobbiamo metterle che torna all inizio dopo che le ha fatte scorrere -->
+    <!-- Carousel -->
     <div class="main-carousel primo"
-        data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000}'>
+        data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000, "wrapAround": true}'>
         <div class="carousel-cell">
             <div class="container-foto"><img src="foto-home1.jpg"></div>
         </div>
@@ -66,18 +73,19 @@
         </div>
     </div>
 
+    <!-- il gioco -->
     <br><br>
-    <div class="containerl">
+    <a name="gioco"><div class="containerl"></a>
         <div class="containerlsx">
             <div class="immagine">
                 <img src="cavalli.jpg" alt="testo alternativo">
-                <a href="cavalli.html"><p>CAVALLI</p></a>
+                <a href="cavalli.html"><h4>CAVALLI</h4></a>
             </div>
         </div>
         <div class="containerldx">
             <div class="immagine">
                 <img src="mondo.png" alt="testo alternativo" />
-                <a href="mondo.html"><p>MONDO</p></a>
+                <a href="mondo.html"><h4>MONDO</h4></a>
             </div>
         </div>
     </div>
@@ -86,46 +94,16 @@
         <div class="containerlsx1">
             <div class="immagine">
                 <img src="amici.jpg" alt="testo alternativo" />
-                <a href="amici.html"><p>AMICI</p></a>
+                <a href="amici.html"><h4>AMICI</h4></a>
             </div>
         </div>
         <div class="containerldx1">
             <div class="immagine">
                 <img src="gara.jpg" alt="testo alternativo" />
-                <a href="gare.html"><p>MISSIONI E GARE</p></a>
+                <a href="gare.html"><h4>MISSIONI E GARE</h4></a>
             </div>
         </div>
     </div>
-
-
-
-    <!-- <br><br>
-    <div class="containerl">
-        <div class="containerlsx">
-            <div class="frame-cavalli">
-                <p>CAVALLI</p>
-            </div>
-        </div>
-        <div class="containerldx">
-            <div class="frame-mondo">
-                <P>MONDO</P>
-            </div>
-        </div>
-    </div>
-
-    <div class="containerl1">
-        <div class="containerlsx1">
-            <div class="frame-amici">
-                <P>AMICI</P>
-            </div>
-        </div>
-        <div class="containerldx1">
-            <div class="frame-meg">
-                <p>MISSIONI E GARE</p>
-            </div>
-        </div>
-    </div> -->
-
 
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>

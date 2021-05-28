@@ -1,0 +1,51 @@
+/* Base Style */
+
+* {
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+
+h1
+
+p{color: black;}
+
+/* Header*/
+
+header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    display: flex;
+    background-image: url("sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+header h1{
+    /* color: white; */
+    color: black;
+    font-size: 40px;
+    font-style: italic;
+}
+
+header p{
+    /* color: white; */
+    color: black;
+    font-size: 25px;
+}
+
+/* Carousel */
+.container-foto img{min-height: 500px; min-width: 100%;}
+.main-carousel{}
+.carousel-cell{width: 100%; margin-top: 0-px; height: 500px; overflow: hidden;}
+
+.primo{
+    margin-top: 100px;
+}

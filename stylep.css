@@ -25,18 +25,26 @@ header{
     transform: translateX(-50%);
     padding: 8px;
     display: flex;
-    background-image: url("sfondo.jpg");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 10;
-    height: 55px;
+    height: 70px;
     display: inline-block;
     text-align: center;
 }
 
+.logo{
+    float: left;
+}
+.logo img{
+    width: 100px;
+    margin-left: 10px;
+}
+
 header h1{
-    /* color: white; */
-    color: black;
+    margin-top: 5px;
+    color:white;
     font-size: 40px;
     font-style: italic;
 }
@@ -57,22 +65,33 @@ header p{
 }
 
 /* Contenitore video cavalli */
-.vcavalli{
-    width: 100%;
-    /* height: 570px; */
-    border:blue solid;
-    justify-content: center;
+
+.vcavalli {
+transform: translate(-50%, -50%);
+position: absolute;
+top: 50%;
+left: 50%;
+text-align: center;
 }
 
-.vcavalli video{
-    position: relative;
-    border: red solid;
+.vcavalli h2 {
+font-size: 40px;
+color: white;
+letter-spacing: 2px;
+border: 8px solid;
+padding: 12px 15px;
+margin: 0;
+text-transform: uppercase;
+text-align: center;
+font-family: arial;
 }
 
-.vcavalli p{
-    position: absolute;
-    margin-top: 100px;
-    border: red solid;
-    z-index: 9;
+.vcavalli p {
+font-style: italic;
+color:white;
+font-size: 24px;
+font-weight: bold;
+padding-top: 16px;
+margin: 0;
 }
 

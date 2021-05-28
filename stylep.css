@@ -1,5 +1,11 @@
 /* Base Style */
 
+body{
+    background-image: url("sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -23,7 +29,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 10;
-    height: 100px;
+    height: 55px;
     display: inline-block;
     text-align: center;
 }
@@ -49,3 +55,24 @@ header p{
 .primo{
     margin-top: 100px;
 }
+
+/* Contenitore video cavalli */
+.vcavalli{
+    width: 100%;
+    /* height: 570px; */
+    border:blue solid;
+    justify-content: center;
+}
+
+.vcavalli video{
+    position: relative;
+    border: red solid;
+}
+
+.vcavalli p{
+    position: absolute;
+    margin-top: 100px;
+    border: red solid;
+    z-index: 9;
+}
+

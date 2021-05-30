@@ -55,6 +55,10 @@ header p{
     font-size: 25px;
 }
 
+video{
+    display: flex;
+}
+
 /* Carousel */
 .container-foto img{height: 400px; width: 400px;}
 .main-carousel{}

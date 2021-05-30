@@ -56,9 +56,16 @@ header p{
 }
 
 /* Carousel */
-.container-foto img{min-height: 500px; min-width: 100%;}
+.container-foto img{height: 400px; width: 400px;}
 .main-carousel{}
-.carousel-cell{width: 100%; margin-top: 0-px; height: 500px; overflow: hidden;}
+.carousel-cell{
+    margin-top: 0px; 
+    height: 400px; 
+    width: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 30px;
+}
 
 .primo{
     margin-top: 100px;
@@ -93,5 +100,41 @@ font-size: 24px;
 font-weight: bold;
 padding-top: 16px;
 margin: 0;
+}
+
+/* Descrizione cavallo*/
+
+.containerc{margin-top: 150px;}
+
+.descrzionec{float: left; width: 50%;}
+
+.descrzionec h1{
+    margin-top: 5px;
+    color:black;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+}
+
+.descrzionec p{
+    margin-top: 15px;
+    color:black;
+    font-size: 30px;
+    font-style: italic;
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Carousel di ogni cavallo*/
+
+.colori{float: left; width: 50%;}
+
+.container-foto1 img{height: 400px; width: 400px;}
+
+.carousel-cell1{
+    margin-top: 0px; 
+    height: 400px; 
+    width: 400px;
+    overflow: hidden;
 }
 

@@ -35,7 +35,7 @@ p {
 }
 
 
-/* Header*/
+/* HEADER*/
 
 header {
     width: 100%;
@@ -107,18 +107,13 @@ header p {
 /* Contenitore video cavalli */
 
 .vcavalli {
+    /*chiedere al prof perchè esce a destra*/
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 600px;
     position: relative;
-    border: solid red;
-    /* transform: translate(-50%, -50%);
-position: absolute;
-top: 50%;
-left: 50%;
-text-align: center; */
 }
 
 .vcavalli__testo {
@@ -152,7 +147,6 @@ text-align: center; */
     min-width: 100%;
     min-height: 100%;
     z-index: 0;
-    border: solid green;
 }
 
 
@@ -174,7 +168,7 @@ text-align: center; */
     display: block;
 }
 
-.popup {
+.cavalli__popup {
     top: -100%;
     right: 0;
     left: 50%;
@@ -183,7 +177,7 @@ text-align: center; */
     margin: 0;
     width: 85%;
     min-width: 320px;
-    max-width: 800px;
+    max-width: 900px;
     position: fixed;
     padding: 15px;
     border: 1px solid #383838;
@@ -192,15 +186,14 @@ text-align: center; */
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
-    font: 14px/18px 'Tahoma', Arial, sans-serif;
     box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
     transform: translate(-50%, -500%);
     transition: transform 0.6s ease-out;
 }
 
-.overlay:target+.popup {
+.overlay:target+.cavalli__popup {
     transform: translate(-50%, 0);
-    top: 20%;
+    top: 12%;
 }
 
 
@@ -263,7 +256,7 @@ text-align: center; */
 
 /* Carousel di ogni cavallo*/
 
-.colori {
+.container-slider {
     float: left;
     width: 50%;
 }
@@ -281,107 +274,53 @@ text-align: center; */
 }
 
 
-/* MAPPA */
+/* MONDO */
 
 .mappa {
-    border: solid red;
     text-align: center;
 }
 
-.fotoluoghi {
-    margin-top: 40px;
-    border: red solid;
-}
-
-
-/* Luoghi */
-
-.containerl {
-    width: 100%;
-    height: 340px;
-    margin-top: 30px;
-    border: blue solid;
-}
-
-.containerlsx {
-    float: left;
-    width: 50%;
-    height: 340px;
+.mondo__testo {
+    margin-top: 80px;
     margin-bottom: 10px;
 }
 
-.containerldx {
-    float: left;
-    width: 50%;
-    height: 340px;
-    margin-bottom: 10px;
-}
-
-.containerl1 {
+.mondo__immagini {
     width: 100%;
-    height: 340px;
-    border: blue solid;
+    max-height: 470px;
 }
 
-.containerlsx1 {
-    float: left;
-    width: 50%;
-    height: 340px;
+.mondo__immagini img {
+    overflow: hidden;
 }
 
-.containerldx1 {
-    float: left;
-    width: 50%;
-    height: 340px;
+.mondo__popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 20;
+    margin: 0;
+    width: 85%;
+    min-width: 320px;
+    max-width: 900px;
+    max-height: 500px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    transform: translate(-50%, -500%);
+    transition: transform 0.6s ease-out;
 }
 
-@media (max-width: 750px) {
-    .containerlsx {
-        width: 100%;
-    }
-    .containerldx {
-        width: 100%;
-    }
-    .containerlsx1 {
-        width: 100%;
-    }
-    .containerldx1 {
-        width: 100%;
-    }
-}
-
-.immagine {
-    padding: 10px;
-    position: relative;
-    height: 100%;
-    border: solid red;
-}
-
-.immagine img {
-    width: 100%;
-    height: 100%;
-    border-radius: 70px;
-    display: flex;
-}
-
-.immagine h4 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: none;
-    width: 100%;
-    height: 50px;
-    padding: 10%;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
-    text-align: center;
-    font-size: 30px;
-}
-
-.immagine:hover h4 {
-    display: block;
+.overlay:target+.mondo__popup {
+    transform: translate(-50%, 0);
+    top: 7%;
 }
 
 

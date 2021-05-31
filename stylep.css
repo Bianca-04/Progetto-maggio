@@ -153,7 +153,57 @@ margin: 0;
 }
 
 .fotoluoghi{
-    height: max-content;
-    
+    margin-top: 40px;   
     border: red solid;
+}
+
+/* Luoghi */
+
+.containerl{width: 100%; height: 340px; margin-top: 30px; border:blue solid;}
+.containerlsx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
+.containerldx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
+
+.containerl1{width: 100%; height: 340px; border:blue solid;}
+.containerlsx1{float:left; width: 50%; height: 340px;}
+.containerldx1{float:left; width: 50%; height: 340px;}
+
+@media (max-width: 750px){
+    .containerlsx{width: 100%;}
+    .containerldx{width: 100%;}
+    .containerlsx1{width: 100%;}
+    .containerldx1{width: 100%;}
+}
+
+.immagine {
+    padding: 10px;
+    position: relative;
+    height: 100%;
+    border: solid red;
+}
+
+.immagine img{
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    display: flex;
+}
+
+.immagine h4{ 
+    position: absolute; 
+    left: 0; 
+    bottom: 0; 
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7); 
+    color: #fff; 
+    display: none; 
+    width: 100%; 
+    height: 50px;
+    padding: 10%; 
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+} 
+ 
+.immagine:hover h4 { 
+    display:block; 
 }

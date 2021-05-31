@@ -11,6 +11,12 @@ body{
 
 a{text-decoration: none;}
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 /* Header*/
 header{
     width: 100%;
@@ -90,11 +96,11 @@ header{
 
 
 /* Il gioco */
-.containerl{width: 100%; height: 340px; margin-top: 30px; border:blue solid;}
+.containerl{width: 100%; height: 340px; margin-top: 30px; border:red solid;}
 .containerlsx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 .containerldx{float:left; width: 50%; height: 340px; margin-bottom: 10px;}
 
-.containerl1{width: 100%; height: 340px;     border:blue solid;}
+.containerl1{width: 100%; height: 340px; border:blue solid;}
 .containerlsx1{float:left; width: 50%; height: 340px;}
 .containerldx1{float:left; width: 50%; height: 340px;}
 
@@ -138,6 +144,8 @@ h4{
 }
 
 @media (max-width: 750px){
+    .containerl{height: 680px;}
+    .containerl1{height: 680px;}
     .containerlsx{width: 100%;}
     .containerldx{width: 100%;}
     .containerlsx1{width: 100%;}
@@ -149,27 +157,23 @@ h4{
 .containern{
     width: 100%;
     margin-top: 70px;
-    border: red solid;
-    height: 600px;
+    border: green solid;
 }
 
 .foton{
     width: 46%;
     float: left;
     margin: 2%;
-    height: 600px;
+    float: left; 
+    position: relative; 
+    overflow: hidden; 
+    border: hotpink solid;
 }
 
 .foton img{
     width: 100%;
     border-radius: 40px;
 }
-
-.foton{ 
-    float: left; 
-    position: relative; 
-    overflow: hidden; 
-} 
  
 .foton p{ 
     position: absolute; 
@@ -200,12 +204,13 @@ h4{
 /* Star Rider */
 .containers{
     width: 100%;
+    margin-top: 30px;
     height: 100px;
     border: solid red;
 }
 
-.descriziones{
-    width: 50%;
+.descriziones{   /* perche va a capooo */
+    width: 49%;
     float: left;
     border: solid red;
 }

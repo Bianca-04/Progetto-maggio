@@ -7,57 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAVALLI</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="stylep.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
-        integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="logonero.png" ></a>
+            <a href="index.html"><img src="logonero.png"></a>
         </div>
     </header>
 
-        <div class="vcavalli">
+    <div class="vcavalli margin-top-header clearfix">
+        <div class="vcavalli__testo">
             <h2>SCEGLI IL CAVALLO<br>CHE FA PER TE</h2>
             <p> → Scopri di più ←</p>
-            </div>
+        </div>
 
-        <video width="100%" height="570" autoplay muted loop>
+        <video autoplay muted loop>
             <source src="videocavalli.MOV" type="video/mp4">
-          Your browser does not support the video tag.
+            Your browser does not support the video tag.
         </video>
     </div>
 
+    <br><br><br>
+
+    <h3>SELEZIONA UN CAVALLO PER SAPERNE DI PIÙ</h3>
+
     <div class="main-carousel primo" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 3000, "wrapAround": true}'>
         <div class="carousel-cell">
-            <a href="#arabo"><div class="container-foto"><img src="arabo.jpg"></div></a>
+            <a href="#popuparabo">
+                <div class="container-foto"><img src="arabo.jpg"></div>
+            </a>
         </div>
         <div class="carousel-cell">
-            <a href="#frisone"><div class="container-foto"><img src="frisone.jpg"></div></a>
+            <a href="#popupfrisone">
+                <div class="container-foto"><img src="frisone.jpg"></div>
+            </a>
         </div>
         <div class="carousel-cell">
-            <a href="#akala"><div class="container-foto"><img src="akala.jpg"></div></a>
+            <a href="#popupakala">
+                <div class="container-foto"><img src="akala.jpg"></div>
+            </a>
         </div>
         <div class="carousel-cell">
-            <a href="#wildhorse"><div class="container-foto"><img src="wildhorse.jpg"></div></a>
+            <a href="#popupwildhorse">
+                <div class="container-foto"><img src="wildhorse.jpg"></div>
+            </a>
         </div>
         <div class="carousel-cell">
-            <a href="#andaluso"><div class="container-foto"><img src="andaluso.jpg"></div></a>
+            <a href="#popupandaluso">
+                <div class="container-foto"><img src="andaluso.jpg"></div>
+            </a>
         </div>
     </div>
 
-    <a name="arabo"><div class="containerc">
-            <div class="descrzionec">
-                <h1>ARABO</h1>
-                <p>Dalla lucentezza  del suo manto alla sua iconica testa camusa, la vista di un arabo <br> lascia tutti a bocca aperta. È una delle razze più rinomate e riconoscibili al mondo, <br> con un passato e delle origini distintive.</p>
-            </div>
-            <div class="colori">
+    <a href="#x" class="overlay" id="popuparabo"></a>
+    <div class="popup">
+        <div class="descrzionec">
+            <h1>ARABO</h1>
+            <p>Dalla lucentezza del suo manto alla sua iconica testa camusa, la vista di un arabo <br> lascia tutti a bocca aperta. È una delle razze più rinomate e riconoscibili al mondo, <br> con un passato e delle origini distintive.</p>
+        </div>
+        <div class="colori">
             <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
                 <div class="carousel-cell1">
                     <div class="container-foto1"><img src="arabi1.jpg"></div>
@@ -70,91 +82,224 @@
                 </div>
             </div>
         </div>
-   </div></a>
+        <a class="close" title="Chiudere" href="#close"></a>
+    </div>
 
-   
-   <a name="frisone"><div class="containerc">
+    <a href="#x" class="overlay" id="popupfrisone"></a>
+    <div class="popup">
         <div class="descrzionec">
-        <h1>FRISONE</h1>
-        <p>È difficile non rimanere a bocca aperta guardando un Frisone galoppare, con coda e criniera che svolazzano al vento. <br> Se stai cercando un compagno con il coraggio <br> di un cavaliere e l'eleganza di una regina, <br> il Frisone è il cavallo giusto per te.</p>
+            <h1>FRISONE</h1>
+            <p>È difficile non rimanere a bocca aperta guardando un Frisone galoppare, con coda e criniera che svolazzano al vento. <br> Se stai cercando un compagno con il coraggio <br> di un cavaliere e l'eleganza di una regina, <br> il Frisone è il cavallo
+                giusto per te.</p>
         </div>
         <div class="colori">
-        <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="frisoni1.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="frisoni2.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="frisoni3.jpg"></div>
+            <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="frisoni1.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="frisoni2.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="frisoni3.jpg"></div>
+                </div>
             </div>
         </div>
-        </div>
-    </div></a>
+        <a class="close" title="Chiudere" href="#close"></a>
+    </div>
 
-    <a name="akala"><div class="containerc">
+    <a href="#x" class="overlay" id="popupakala"></a>
+    <div class="popup">
         <div class="descrzionec">
-        <h1>AKHAL-TEKE</h1>
-        <p>Noto come "cavallo celeste". <br> Con un corpo slanciato che ricorda quello di un ghepardo, un manto che a volte presenza sfumature metalliche, e una discendenza che <br> risale a oltre 3000 anni fa, l'Akhal Teke è <br> una delle razze equine più esotiche e amate <br> del mondo.</p>
+            <h1>AKHAL-TEKE</h1>
+            <p>Noto come "cavallo celeste". <br> Con un corpo slanciato che ricorda quello di un ghepardo, un manto che a volte presenza sfumature metalliche, e una discendenza che <br> risale a oltre 3000 anni fa, l'Akhal Teke è <br> una delle razze equine
+                più esotiche e amate <br> del mondo.</p>
         </div>
         <div class="colori">
-        <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="akala1.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="akala2.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="akala3.jpg"></div>
+            <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="akala1.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="akala2.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="akala3.jpg"></div>
+                </div>
             </div>
         </div>
-        </div>
-    </div></a>
+        <a class="close" title="Chiudere" href="#close"></a>
+    </div>
 
-    <a name="wildhorse"><div class="containerc">
+    <a href="#x" class="overlay" id="popupwildhorse"></a>
+    <div class="popup">
         <div class="descrzionec">
-        <h1>WILD HORSE</h1>
-        <p>I cavalli selvatici di Jorvik sono una razza antichissima. Non si lasciano domare facilmente. Sono loro a scegliere il proprio fantino. Il legame con un cavallo selvatico di Jorvik è un legame <br> di reciproca fiducia.</p>
+            <h1>WILD HORSE</h1>
+            <p>I cavalli selvatici di Jorvik sono una razza antichissima. Non si lasciano domare facilmente. Sono loro a scegliere il proprio fantino. Il legame con un cavallo selvatico di Jorvik è un legame <br> di reciproca fiducia.</p>
         </div>
         <div class="colori">
-        <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="wildhorse1.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="wildhorse2.jpg"></div>
+            <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="wildhorse1.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="wildhorse2.jpg"></div>
+                </div>
             </div>
         </div>
-        </div>
-    </div></a>
+        <a class="close" title="Chiudere" href="#close"></a>
+    </div>
 
-    <a name="andaluso"><div class="containerc">
+    <a href="#x" class="overlay" id="popupandaluso"></a>
+    <div class="popup">
         <div class="descrzionec">
-        <h1>ANDALUSO</h1>
-        <p>La corporatura compatta e i movimenti agili <br> ed elevati rendono l'Andaluso il cavallo perfetto per cavalcare. È un cavallo versatile che si <br> adatta a tutte le discipline, ma ha un talento naturale per il dressage.</p>
+            <h1>ANDALUSO</h1>
+            <p>La corporatura compatta e i movimenti agili <br> ed elevati rendono l'Andaluso il cavallo perfetto per cavalcare. È un cavallo versatile che si <br> adatta a tutte le discipline, ma ha un talento naturale per il dressage.</p>
         </div>
         <div class="colori">
-        <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="andalusi1.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="andalusi2.jpg"></div>
-            </div>
-            <div class="carousel-cell1">
-                <div class="container-foto1"><img src="andalusi3.jpg"></div>
+            <div class="second-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="andalusi1.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="andalusi2.jpg"></div>
+                </div>
+                <div class="carousel-cell1">
+                    <div class="container-foto1"><img src="andalusi3.jpg"></div>
+                </div>
             </div>
         </div>
+        <a class="close" title="Chiudere" href="#close"></a>
+    </div>
+
+
+
+    <!-- <a name="arabo">
+        <div class="containerc">
+            <div class="descrzionec">
+                <h1>ARABO</h1>
+                <p>Dalla lucentezza del suo manto alla sua iconica testa camusa, la vista di un arabo <br> lascia tutti
+                    a bocca aperta. È una delle razze più rinomate e riconoscibili al mondo, <br> con un passato e delle
+                    origini distintive.</p>
+            </div>
+            <div class="colori">
+                <div class="second-carousel"
+                    data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="arabi1.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="arabi2.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="arabi3.jpg"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div></a>
+    </a>
+
+
+    <a name="frisone">
+        <div class="containerc">
+            <div class="descrzionec">
+                <h1>FRISONE</h1>
+                <p>È difficile non rimanere a bocca aperta guardando un Frisone galoppare, con coda e criniera che
+                    svolazzano al vento. <br> Se stai cercando un compagno con il coraggio <br> di un cavaliere e
+                    l'eleganza di una regina, <br> il Frisone è il cavallo giusto per te.</p>
+            </div>
+            <div class="colori">
+                <div class="second-carousel"
+                    data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="frisoni1.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="frisoni2.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="frisoni3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a name="akala">
+        <div class="containerc">
+            <div class="descrzionec">
+                <h1>AKHAL-TEKE</h1>
+                <p>Noto come "cavallo celeste". <br> Con un corpo slanciato che ricorda quello di un ghepardo, un manto
+                    che a volte presenza sfumature metalliche, e una discendenza che <br> risale a oltre 3000 anni fa,
+                    l'Akhal Teke è <br> una delle razze equine più esotiche e amate <br> del mondo.</p>
+            </div>
+            <div class="colori">
+                <div class="second-carousel"
+                    data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="akala1.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="akala2.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="akala3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a name="wildhorse">
+        <div class="containerc">
+            <div class="descrzionec">
+                <h1>WILD HORSE</h1>
+                <p>I cavalli selvatici di Jorvik sono una razza antichissima. Non si lasciano domare facilmente. Sono
+                    loro a scegliere il proprio fantino. Il legame con un cavallo selvatico di Jorvik è un legame <br>
+                    di reciproca fiducia.</p>
+            </div>
+            <div class="colori">
+                <div class="second-carousel"
+                    data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="wildhorse1.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="wildhorse2.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+
+    <a name="andaluso">
+        <div class="containerc">
+            <div class="descrzionec">
+                <h1>ANDALUSO</h1>
+                <p>La corporatura compatta e i movimenti agili <br> ed elevati rendono l'Andaluso il cavallo perfetto
+                    per cavalcare. È un cavallo versatile che si <br> adatta a tutte le discipline, ma ha un talento
+                    naturale per il dressage.</p>
+            </div>
+            <div class="colori">
+                <div class="second-carousel"
+                    data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 2000}'>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="andalusi1.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="andalusi2.jpg"></div>
+                    </div>
+                    <div class="carousel-cell1">
+                        <div class="container-foto1"><img src="andalusi3.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a> -->
     <!--<p>Se vuoi cavalcarlo iscriviti e GIOCA ORA!</p>-->
 
     <!-- Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"
-        integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA=="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
 </body>
 
 </html>

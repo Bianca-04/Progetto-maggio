@@ -389,24 +389,40 @@ text-align: center; */
 
 .containera {
     width: 100%;
-    border: red solid;
 }
 
 .containera__testo {
     width: 50%;
-    height: 400px;
+    height: 350px;
     float: left;
     text-align: center;
     align-items: center;
+    
+}
+
+.containera__testo h2{
+    font-size: 30px;
 }
 
 .containera__foto {
     width: 50%;
     float: left;
-    border: red solid;
+    height: 350px;
 }
 
 .containera__foto img {
     overflow: hidden;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px){
+    .containera__testo{
+        width: 100%;
+        height: 100px;
+    }
+
+    .containera__foto{
+        width: 100%;
+    }
 }

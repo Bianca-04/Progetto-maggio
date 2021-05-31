@@ -152,8 +152,6 @@ text-align: center; */
     min-width: 100%;
     min-height: 100%;
     z-index: 0;
-    /* height: 100%; */
-    /* top: 70px; */
     border: solid green;
 }
 
@@ -384,4 +382,31 @@ text-align: center; */
 
 .immagine:hover h4 {
     display: block;
+}
+
+
+/* AMICI */
+
+.containera {
+    width: 100%;
+    border: red solid;
+}
+
+.containera__testo {
+    width: 50%;
+    height: 400px;
+    float: left;
+    text-align: center;
+    align-items: center;
+}
+
+.containera__foto {
+    width: 50%;
+    float: left;
+    border: red solid;
+}
+
+.containera__foto img {
+    overflow: hidden;
+    max-width: 100%;
 }

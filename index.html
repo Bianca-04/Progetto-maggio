@@ -7,13 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css"
-        integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css" integrity="sha512-BiFZ6oflftBIwm6lYCQtQ5DIRQ6tm02svznor2GYQOfAlT3pnVJ10xCrU3XuXnUrWQ4EG8GKxntXnYEdKY0Ugg==" crossorigin="anonymous" />
 </head>
 
 <!-- menù -->
@@ -57,8 +53,7 @@
     </header>
 
     <!-- Carousel -->
-    <div class="main-carousel primo"
-        data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000, "wrapAround": true}'>
+    <div class="main-carousel primo" data-flickity='{ "cellAlign": "left", "contain": true, "pageDots": false, "autoPlay": 2000, "wrapAround": true}'>
         <div class="carousel-cell">
             <div class="container-foto"><img src="foto-home1.jpg"></div>
         </div>
@@ -77,9 +72,8 @@
     </div>
 
     <!-- il gioco -->
-    <br><br><br>
 
-    <div class="containerl">
+    <div class="containerl clearfix">
         <a name="gioco"></a>
         <a href="cavalli.html">
             <div class="containerlsx">
@@ -100,7 +94,7 @@
         </a>
     </div>
 
-    <div class="containerl1">
+    <div class="containerl1 clearfix">
         <a href="amici.html">
             <div class="containerlsx1">
                 <div class="immagine">
@@ -134,13 +128,17 @@
     </a>
 
     <!-- star rider -->
-    <div class="containers">
+    <div class="containers clearfix">
         <div class="descriziones">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, aliquam quam? Deleniti sit aliquam, porro
-            ipsa atque facere nam dolorum unde at quas aspernatur quae, rem ut aperiam quis eos!
+            <h2>VUOI ESPLORARE TUTTI I LUOGHI DEL GIOCO?</h2>
+            <p>Star Stable si può provare gratuitamente. Per sbloccare la versione completa del gioco e ottenere l’accesso a tutte le avventure e alle sfide, hai bisogno di diventare una Star Rider. </p>
+            <p>diventa ora star rider cliccando una di queste offerte!</p>
         </div>
         <div class="bottonis">
-            <button>ciao</button>
+            <button>1 MESE</button>
+            <button>3 MESI</button>
+            <button>6 MESI</button>
+            <button>LIFETIME</button>
         </div>
     </div>
 
@@ -148,22 +146,20 @@
     <!-- Jquery -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"
-        integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA=="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js" integrity="sha512-cA8gcgtYJ+JYqUe+j2JXl6J3jbamcMQfPe0JOmQGDescd+zqXwwgneDzniOd3k8PcO7EtTW6jA7L4Bhx03SXoA==" crossorigin="anonymous"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
 
             /* Open panel */
-            $(".hamburger").on('click', function () {
+            $(".hamburger").on('click', function() {
                 $(".menu").toggleClass("menu--open");
             })
         })
     </script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
+        $(document).ready(function() {
 
             /* variabili */
 
@@ -181,11 +177,11 @@
             function myFunction(x) { //non va!!
                 if (x.matches) {
                     /* mouseover */
-                    nav.find("ul li").on('mouseout', function () {
+                    nav.find("ul li").on('mouseout', function() {
                         line.hide();
                     });
 
-                    nav.find("ul li").on('mouseover', function () {
+                    nav.find("ul li").on('mouseover', function() {
 
                         var this_nav = $(this);
                         line.show();
@@ -202,7 +198,6 @@
                 }
             }
         })
-
     </script>
 
 

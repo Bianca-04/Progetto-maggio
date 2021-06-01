@@ -371,7 +371,6 @@ header p {
 /* AMICI */
 
 .containera {
-    margin-top: 50px;
     width: 100%;
     display: inline;
 }
@@ -381,20 +380,19 @@ header p {
     height: 350px;
     float: left;
     text-align: center;
-    margin-bottom: 50px;
-    justify-content: center;
+    line-height: 350px;
+    margin-top: 50px;
 }
 
 .containera__testo h2 {
     font-size: 30px;
-    /* line-height: 350px; */
 }
 
 .containera__foto {
     width: 50%;
     float: left;
     height: 350px;
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .containera__foto img {

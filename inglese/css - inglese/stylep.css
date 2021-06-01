@@ -1,0 +1,435 @@
+/* Base Style */
+
+body {
+    background-image: url("../immagini/home/sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p {
+    color: black;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* HEADER*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    display: flex;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 10;
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+header h1 {
+    margin-top: 5px;
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+}
+
+header p {
+    /* color: white; */
+    color: black;
+    font-size: 25px;
+}
+
+.margin-top-header {
+    margin-top: 70px;
+}
+
+
+/* Carousel */
+
+.container-foto img {
+    height: 400px;
+    width: 400px;
+}
+
+.main-carousel {}
+
+.carousel-cell {
+    margin-top: 0px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-right: 30px;
+}
+
+.primo {
+    margin-top: 60px;
+}
+
+
+/* Contenitore video cavalli */
+
+.vcavalli {
+    /*chiedere al prof perchè esce a destra*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.vcavalli__testo {
+    z-index: 1;
+}
+
+.vcavalli__testo h2 {
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+    border: 8px solid;
+    padding: 12px 15px;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: arial;
+}
+
+.vcavalli__testo p {
+    font-style: italic;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 16px;
+    margin: 0;
+    text-align: center;
+}
+
+.vcavalli video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+
+/* finestra pop up */
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: fixed;
+    cursor: default;
+}
+
+.overlay:target {
+    display: block;
+}
+
+.cavalli__popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 20;
+    margin: 0;
+    width: 85%;
+    min-width: 320px;
+    max-width: 900px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    transform: translate(-50%, -500%);
+    transition: transform 0.6s ease-out;
+}
+
+.overlay:target+.cavalli__popup {
+    transform: translate(-50%, 0);
+    top: 12%;
+}
+
+.descrzionec p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.descrzionec h2 {
+    margin-top: 10px;
+}
+
+
+/* bottone di chiusura  */
+
+.close {
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    padding: 0;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;
+    transition: all ease .8s;
+}
+
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    transform: rotate(360deg);
+}
+
+
+/* Descrizione cavallo*/
+
+.descrzionec {
+    float: left;
+    width: 50%;
+}
+
+.descrzionec h1 {
+    margin-top: 5px;
+    color: black;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+}
+
+.descrzionec p {
+    margin-top: 15px;
+    color: black;
+    font-size: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+
+/* Carousel di ogni cavallo*/
+
+.container-slider {
+    float: left;
+    width: 50%;
+}
+
+.container-foto1 img {
+    height: 400px;
+    width: 400px;
+}
+
+.carousel-cell1 {
+    margin-top: 0px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+@media(max-width: 875px) {
+    .cavalli__popup {
+        max-height: 500px;
+        margin-top: -30px;
+    }
+    .descrzionec {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .descrzionec p {
+        font-size: 20px;
+    }
+    .container-slider {
+        width: 100%;
+    }
+    .container-foto1 img {
+        height: 200px;
+    }
+}
+
+@media(max-width: 680px) {
+    .cavalli__popup {
+        max-height: 500px;
+        margin-top: 30px;
+    }
+    .descrzionec {
+        width: 100%;
+    }
+    .container-slider {
+        display: none;
+    }
+}
+
+
+/* MONDO */
+
+.mappa {
+    text-align: center;
+}
+
+.mondo__testo {
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.mondo__immagini {
+    width: 100%;
+    max-height: 470px;
+}
+
+.mondo__immagini img {
+    overflow: hidden;
+}
+
+.mondo__popup {
+    top: -100%;
+    right: 0;
+    left: 50%;
+    font-size: 14px;
+    z-index: 20;
+    margin: 0;
+    width: 85%;
+    min-width: 320px;
+    max-width: 900px;
+    max-height: 500px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    background: #fefefe;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .22), 0 19px 60px rgba(0, 0, 0, .3);
+    transform: translate(-50%, -500%);
+    transition: transform 0.6s ease-out;
+}
+
+.overlay:target+.mondo__popup {
+    transform: translate(-50%, 0);
+    top: 7%;
+}
+
+
+/* AMICI */
+
+.containera {
+    margin-top: 50px;
+    width: 100%;
+    display: inline;
+}
+
+.containera__testo {
+    width: 50%;
+    height: 350px;
+    float: left;
+    text-align: center;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.containera__testo h2 {
+    font-size: 30px;
+    /* line-height: 350px; */
+}
+
+.containera__foto {
+    width: 50%;
+    float: left;
+    height: 350px;
+    margin-bottom: 50px;
+}
+
+.containera__foto img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .cavalli__popup {}
+    .containera__testo {
+        width: 100%;
+        height: 100px;
+    }
+    .containera__foto {
+        width: 100%;
+    }
+}
+
+
+/* GARE */
+
+.gare__video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gare__video video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}

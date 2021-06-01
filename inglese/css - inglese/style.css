@@ -1,0 +1,324 @@
+/* Base Style */
+
+body {
+    background-image: url("../immagini/home/sfondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Header*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    display: flex;
+    background-color: black;
+    z-index: 10;
+    height: 75px;
+}
+
+.menu {
+    width: 100%;
+    display: inline-block;
+}
+
+.menusx {
+    width: 49%;
+    display: inline-block;
+}
+
+.menusx ul li {
+    display: inline-block;
+}
+
+.menusx li {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: block;
+    margin-left: 30px;
+}
+
+.line-menu {
+    position: absolute;
+    bottom: 0px;
+    height: 5px;
+    width: 60px;
+    background-color: white;
+}
+
+.menudx {
+    width: 49%;
+    text-align: right;
+    display: inline-block;
+}
+
+.menudx ul li {
+    display: inline-block;
+}
+
+.menudx li {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: block;
+    margin-right: 30px;
+}
+
+.hamburger {
+    display: none;
+    margin-right: 20px;
+}
+
+.logo img {
+    width: 100px;
+    margin-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        position: fixed;
+        width: 175px;
+        top: 0;
+        right: -100%;
+        background-color: black;
+        height: 360px;
+        padding-top: 80px;
+    }
+    .menusx {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 0px;
+    }
+    .menudx {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        padding-top: 0px;
+    }
+    .menusx li {
+        margin: 0px
+    }
+    .menudx li {
+        margin: 0px
+    }
+    .line-menu {
+        opacity: 0
+    }
+    .hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .menu--open {
+        right: 0%
+    }
+    .hamburger span {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+
+/* Carousel */
+
+.container-foto img {
+    min-height: 500px;
+    min-width: 100%;
+}
+
+.main-carousel {}
+
+.carousel-cell {
+    width: 100%;
+    margin-top: 0px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.primo {
+    margin-top: 75px;
+}
+
+
+/* Il gioco */
+
+.containerl {
+    width: 100%;
+    height: 340px;
+    margin-top: 30px;
+}
+
+.containerlsx {
+    float: left;
+    width: 50%;
+    height: 340px;
+    margin-bottom: 10px;
+}
+
+.containerldx {
+    float: left;
+    width: 50%;
+    height: 340px;
+    margin-bottom: 10px;
+}
+
+.containerl1 {
+    width: 100%;
+    height: 340px;
+}
+
+.containerlsx1 {
+    float: left;
+    width: 50%;
+    height: 340px;
+}
+
+.containerldx1 {
+    float: left;
+    width: 50%;
+    height: 340px;
+}
+
+
+/* Il gioco - immagini */
+
+.immagine {
+    padding: 10px;
+    position: relative;
+    height: 100%;
+}
+
+.immagine img {
+    width: 100%;
+    height: 100%;
+    border-radius: 70px;
+    display: flex;
+    -webkit-filter: brightness(100%);
+}
+
+h4 {
+    position: absolute;
+    color: white;
+    opacity: 0;
+    font: bold 40px Georgia;
+    text-align: center;
+    top: 157px;
+    width: 100%;
+    margin: -10px;
+}
+
+.immagine:hover img {
+    -webkit-filter: brightness(40%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.immagine:hover h4 {
+    opacity: 1;
+}
+
+@media (max-width: 750px) {
+    .containerl {
+        height: 680px;
+    }
+    .containerl1 {
+        height: 680px;
+    }
+    .containerlsx {
+        width: 100%;
+    }
+    .containerldx {
+        width: 100%;
+    }
+    .containerlsx1 {
+        width: 100%;
+    }
+    .containerldx1 {
+        width: 100%;
+    }
+}
+
+
+/* Noi */
+
+.containern {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.foton {
+    width: 46%;
+    float: left;
+    margin: 2%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.foton img {
+    width: 100%;
+    border-radius: 40px;
+}
+
+.foton p {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    color: #fff;
+    display: none;
+    width: 100%;
+    padding: 10%;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.foton:hover p {
+    display: block;
+}
+
+@media (max-width: 750px) {
+    .containern {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 450px) {
+    .foton p {
+        font-size: 20px;
+    }
+}

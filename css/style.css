@@ -316,3 +316,9 @@ h4 {
         margin-top: 60px;
     }
 }
+
+@media (max-width: 450px) {
+    .foton p {
+        font-size: 20px;
+    }
+}

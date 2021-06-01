@@ -114,6 +114,7 @@ header p {
     justify-content: center;
     height: 600px;
     position: relative;
+    overflow: hidden;
 }
 
 .vcavalli__testo {
@@ -196,6 +197,16 @@ header p {
     top: 12%;
 }
 
+.descrzionec p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.descrzionec h2 {
+    margin-top: 10px;
+}
+
 
 /* bottone di chiusura  */
 
@@ -273,6 +284,39 @@ header p {
     overflow: hidden;
 }
 
+@media(max-width: 875px) {
+    .cavalli__popup {
+        max-height: 500px;
+        margin-top: -30px;
+    }
+    .descrzionec {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .descrzionec p {
+        font-size: 20px;
+    }
+    .container-slider {
+        width: 100%;
+    }
+    .container-foto1 img {
+        height: 200px;
+    }
+}
+
+@media(max-width: 680px) {
+    .cavalli__popup {
+        max-height: 500px;
+        margin-top: 30px;
+    }
+    .descrzionec {
+        width: 100%;
+    }
+    .container-slider {
+        display: none;
+    }
+}
+
 
 /* MONDO */
 
@@ -327,7 +371,9 @@ header p {
 /* AMICI */
 
 .containera {
+    margin-top: 50px;
     width: 100%;
+    display: inline;
 }
 
 .containera__testo {
@@ -335,17 +381,20 @@ header p {
     height: 350px;
     float: left;
     text-align: center;
-    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
 }
 
 .containera__testo h2 {
     font-size: 30px;
+    /* line-height: 350px; */
 }
 
 .containera__foto {
     width: 50%;
     float: left;
     height: 350px;
+    margin-bottom: 50px;
 }
 
 .containera__foto img {
@@ -355,6 +404,7 @@ header p {
 }
 
 @media (max-width: 800px) {
+    .cavalli__popup {}
     .containera__testo {
         width: 100%;
         height: 100px;
@@ -362,4 +412,24 @@ header p {
     .containera__foto {
         width: 100%;
     }
+}
+
+
+/* GARE */
+
+.gare__video {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gare__video video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
 }
